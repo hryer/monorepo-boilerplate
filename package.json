@@ -1,0 +1,22 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "monorepo CRA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hryer/monorepo-boilerplate.git"
+  },
+  "author": "hryer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hryer/monorepo-boilerplate/issues"
+  },
+  "homepage": "https://github.com/hryer/monorepo-boilerplate#readme",
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}
