@@ -1,10 +1,12 @@
 {
   "name": "monorepo",
   "version": "1.0.0",
+  "private": true,
   "description": "monorepo CRA",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,25 @@
   },
   "homepage": "https://github.com/hryer/monorepo-boilerplate#readme",
   "devDependencies": {
-    "lerna": "^3.16.4"
-  }
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "lerna": "^3.16.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-test-renderer": "^16.9.0",
+    "@storybook/react": "^5.1.10",
+    "@storybook/addon-actions": "^5.1.10",
+    "@storybook/addon-links": "^5.1.10",
+    "@storybook/addons": "^5.1.10",
+    "babel-loader": "^8.0.6"
+  },
+  "dependencies": {}
 }
