@@ -9,11 +9,12 @@ import { Button, Welcome } from '@storybook/react/demo';
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
+  .add('with text', () => (
+    <Button onClick={action('clicked')}>Button</Button>
+  ))
   .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+    <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+  ))
+  .add('with a theme provider', () => (
+    <Button onClick={action('clicked')}>Button</Button>
+  ))
