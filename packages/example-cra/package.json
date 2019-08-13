@@ -1,11 +1,9 @@
 {
-  "name": "example-cra",
+  "name": "@project/example-cra",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.0"
+    "@project/shared-btn": "*"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +25,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-loader-lerna-cra": "^0.1.3"
   }
 }
